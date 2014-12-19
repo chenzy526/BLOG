@@ -46,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin</a>
+                <a class="navbar-brand" href="index.html">blog</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -161,17 +161,18 @@
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
+                            <li><a href="#">Dropdown Item</a></li>
+                            <li><a href="#">Dropdown Item</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
-                    </li>
+                    <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a></li>
+                    <!-- 新加列表项目 -->
+                    <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 用户列表</a></li>
+                    <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 节点列表</a></li>
+                    <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 角色列表</a></li>
+                    <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 添加用户</a></li>
+                    <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 添加节点</a></li>
+                    <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 添加角色</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
