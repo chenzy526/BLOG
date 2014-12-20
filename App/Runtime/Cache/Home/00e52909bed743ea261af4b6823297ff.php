@@ -167,7 +167,7 @@
                     </li>
                     <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a></li>
                     <!-- 新加列表项目 -->
-                    <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 用户列表</a></li>
+                    <li><a href="<?php echo U('Rbac/user');?>"><i class="fa fa-fw fa-file"></i> 用户列表</a></li>
                     <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 节点列表</a></li>
                     <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 角色列表</a></li>
                     <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 添加用户</a></li>
