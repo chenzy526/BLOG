@@ -152,7 +152,8 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li class="active"><a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a></li>
+                    <!--
+					<li class="active"><a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a></li>
                     <li><a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a></li>
                     <li><a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a></li>
                     <li><a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a></li>
@@ -166,13 +167,14 @@
                         </ul>
                     </li>
                     <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a></li>
+					-->
                     <!-- 新加列表项目 -->
                     <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 用户列表</a></li>
                     <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 节点列表</a></li>
                     <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 角色列表</a></li>
                     <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 添加用户</a></li>
                     <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 添加节点</a></li>
-                    <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 添加角色</a></li>
+                    <li><a href="<?php echo U('Rbac/addrole');?>"><i class="fa fa-fw fa-file"></i> 添加角色</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -182,23 +184,6 @@
 
             <div class="container-fluid">
 
-                <!-- Page Heading -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">
-                            Blank Page
-                            <small>Subheading</small>
-                        </h1>
-                        <ol class="breadcrumb">
-                            <li>
-                                <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
-                            </li>
-                            <li class="active">
-                                <i class="fa fa-file"></i> Blank Page
-                            </li>
-                        </ol>
-                    </div>
-                </div>
                 <!-- /.row -->
 
             </div>

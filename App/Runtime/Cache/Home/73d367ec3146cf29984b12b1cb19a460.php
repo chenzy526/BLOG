@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,13 +12,13 @@
     <title>SB Admin - Bootstrap Admin Template</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/blog/Public/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="__PUBLIC__/css/sb-admin.css" rel="stylesheet">
+    <link href="/blog/Public/css/sb-admin.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="__PUBLIC__/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/blog/Public/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -171,10 +171,10 @@
                     <!-- 新加列表项目 -->
                     <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 用户列表</a></li>
                     <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 节点列表</a></li>
-                    <li><a href="{:U('Rbac/role')}"><i class="fa fa-fw fa-file"></i> 角色列表</a></li>
+                    <li><a href="<?php echo U('Rbac/role');?>"><i class="fa fa-fw fa-file"></i> 角色列表</a></li>
                     <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 添加用户</a></li>
                     <li><a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 添加节点</a></li>
-                    <li><a href="{:U('Rbac/addrole')}"><i class="fa fa-fw fa-file"></i> 添加角色</a></li>
+                    <li><a href="<?php echo U('Rbac/addrole');?>"><i class="fa fa-fw fa-file"></i> 添加角色</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -196,10 +196,76 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="__PUBLIC__/js/jquery.js"></script>
+    <script src="/blog/Public/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+    <script src="/blog/Public/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+     <div id="wrapper">
+        <div id="page-wrapper">
+	        <div class="container-fluid">
+	        <div class="row">
+	            <div class="col-lg-6">
+				    <div class="table-responsive">
+							<table class="table table-bordered table-hover">
+				            	<tr>
+					            		<td>ID</td>
+					            		<td>角色名称</td>
+								    	<td>角色描述</td>
+										<td>开启状态</td>
+								    	<td>操作</td>
+							  </tr>
+						<?php if(is_array($rolelist)): foreach($rolelist as $key=>$v): ?><tr>
+						  	   	    <td><?php echo ($v["id"]); ?></td>
+									<td><?php echo ($v["name"]); ?></td>
+									<td><?php echo ($v["remark"]); ?></td>
+									<td>
+									       <?php if($v['status']): ?>开启<?php else: ?>关闭<?php endif; ?>
+									</td>
+									<td><a href="###" >配置权限</a></td>  
+							  </tr><?php endforeach; endif; ?>
+				            </table>
+			     	</div>
+				</div>
+			</div>
+	                <!-- Page Heading 
+	                <div class="row">
+	                    <div class="col-lg-12">
+	                        <h1 class="page-header">
+	                            Blank Page
+	                            <small>Subheading</small>
+	                        </h1>
+	                        <ol class="breadcrumb">
+	                            <li>
+	                                <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
+	                            </li>
+	                            <li class="active">
+	                                <i class="fa fa-file"></i> Blank Page
+	                            </li>
+	                        </ol>
+	                    </div>
+	                </div>
+					-->
+	                <!-- /.row -->
+	
+	            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="/blog/Public/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/blog/Public/js/bootstrap.min.js"></script>
 
 </body>
 
